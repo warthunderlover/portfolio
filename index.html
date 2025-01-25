@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/portafolio/style.css">
+
+    <title>My Portfolio</title>
+
+</head>
+<body>
+    <header>
+        <h1>Bienvenidos a mi Portafolio.</h1>
+    </header>
+
+    <div class="container">
+        <section class="profile">
+            <img src="/portafolio/imagen/profile.jpeg" alt="Profile Picture">
+            <h1>Your Name</h1>
+            <p>Web Developer | Diseñador | Innovador</p>
+            <p>Soy un pasanta en la carrera de Ing. en Ciencias de la Computación y soy muy apasionado con el trabajo de hacer y diseñar paginas web. Soy una persona que siempre busca una forma de mejorar en lo que hace y en investigas nuevas tecnologías.</p>
+        </section>
+
+        <section class="projects">
+            <h2>Mis Proyectos</h2>
+            <div class="project">
+                <h3>Proyecto 1</h3>
+                <p>Compañia de seguros. Este proyecto es en el que estoy trabajndo actualmente, es un start up para una compañia de segurops llamada "Alas Seguros".</p>
+            </div>
+            <div class="project">
+                <h3>Proyecto 2</h3>
+                <p>tecnitours. fue mi proyecto final del periodo pasado y yo trabaj en el diseño del apartado de planes de vijaes y en la galeria de fotos de esta empresa de viajes.</p>
+            </div>
+            <div class="project">
+                <h3>Proyecto 3</h3>
+                <p>Copia de youtube. Este fue un proyectto en le que yo estuve trabajando para poder aprender más sobre el diseño web yu el diseño de lon contenedores.</p>
+            </div>
+        </section>
+
+        <section class="contact">
+            <h2>Contactame</h2>
+            <a href="mailto:lazoemanuel29@gmail.com" target="_blank">Email Me</a>
+            <a href="https://github.com/warthunderlover" target="_blank">GitHub</a>
+        </section>
+    </div>
+</body>
+
+<script>
+    document.querySelectorAll('.project').forEach(project => {
+    project.addEventListener('click', () => {
+        alert('You clicked on ' + project.querySelector('h3').innerText);
+    });
+});
+</script>
+
+
+</html>
